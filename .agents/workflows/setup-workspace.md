@@ -7,9 +7,9 @@ This workflow initializes the core documentation architecture according to the `
 
 1. Create a `docs/` directory in the root of the workspace.
 // turbo
-2. Create `docs/01_Concept.md` with a template for the high-level design, vision, and fundamental design decisions.
+2. Create `docs/01_Concept.md` with an empty structure (Headings only) and explicit placeholders: `[To be filled by /validate-idea and /define-mvp]`. Do NOT invent a concept.
 // turbo
-3. Create `docs/02_TechStack.md` with a template for used technologies, frameworks, and important links.
+3. Create `docs/02_TechStack.md` with an empty structure (Headings only) and explicit placeholders: `[To be filled by /define-techstack]`. Do NOT invent a tech stack (e.g., do not suggest React or PostgreSQL yet).
 // turbo
 4. Create `docs/systems/` directory.
 // turbo
@@ -21,4 +21,4 @@ This workflow initializes the core documentation architecture according to the `
 
 **Execution Notes for the Agent:**
 - When running this workflow, use your terminal tools (`run_command`) or file creation tools (`write_to_file`) to generate the files and directories described above.
-- Ensure the templates you use are detailed enough to give the user a clear starting point.
+- **CRITICAL:** Do NOT fill `01_Concept.md` or `02_TechStack.md` with actual ideas, frameworks, or languages. You are only scaffolding the empty paper for future workflows. Use placeholders.
