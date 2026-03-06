@@ -4,7 +4,7 @@
 
   <p>
     <a href="#-the-problem"><img alt="Status" src="https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge&logoColor=white" /></a>
-    <a href="#-the-problem"><img alt="License" src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logoColor=white" /></a>
+    <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logoColor=white" /></a>
   </p>
 </div>
 
