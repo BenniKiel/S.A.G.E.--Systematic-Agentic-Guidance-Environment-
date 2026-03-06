@@ -36,12 +36,21 @@ Der Agent wird `02_TechStack.md` ausfüllen und Architektur-Patterns (wie MVC od
 - Er verweist explizit auf die Skills (damit der Agent den Kontext lädt).
 - Er triggert den `structured_problem_solving` Skill (Zwingt den Agenten zum Stoppen und Nachfragen).
 
-## 3. Wie man Agenten im Alltag "richtig" promptet
+## 3. Codebase Initialisierung (Das Fundament gießen)
+
+Wenn der Tech-Stack beschlossen ist, brauchst du erst einmal das leere Projektgerüst in deinem Ordner, bevor du einzelne Systeme erstellst.
+
+**Optimaler Prompt:**
+> *"Unser Tech-Stack steht. Bitte führe den `/init-codebase` Workflow aus, um das grundlegende Projektgerüst (Framework etc.) in diesem Ordner zu installieren und aufzusetzen."*
+
+Der Agent liest den Tech-Stack und führt die nötigen CLI-Commands aus (z.B. `npx create-next-app`, `npm init` etc.), um das leere Projekt bereitzustellen.
+
+## 4. Wie man Agenten im Alltag "richtig" promptet
 
 Dank deiner neuen Skills musst du Agenten nicht mehr mikromanagen ("Erstelle ein File hier, aktualisiere die Doku da, mach langsam..."). Die Skills übernehmen das.
 
 ### A. System Design anfragen (C4 Level 3)
-Sobald Tech Stack und Konzept stehen, konzipierst du Systeme einzeln:
+Sobald Codebase, Tech Stack und Konzept stehen, konzipierst du Systeme einzeln:
 > *"Ich brauche ein neues Authentication-System. Bitte führe den `/create-system` Workflow für ein 'Auth_System' aus."*
 
 *Was im Hintergrund passiert:* Der Agent liest die Docs, erstellt das C4-System-Dokument in `docs/systems/` inkl. Diagramm, stoppt und bittet um Erlaubnis. **Er schreibt in diesem Workflow keinen Code!**

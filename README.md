@@ -89,13 +89,19 @@ Prompt:
 
 *(Agent defines the Engine, Database, and State Management patterns in `docs/02_TechStack.md`).*
 
-### 4️⃣ Phase 3: Component Design
+### 4️⃣ Phase 3: Project Initialization
+Prompt: 
+> *"Execute `/init-codebase` to scaffold the framework based on our tech stack."*
+
+*(Agent runs CLI commands like `npx create-next-app` or sets up the physical folder structure for the engine).*
+
+### 5️⃣ Phase 4: Component Design
 Prompt: 
 > *"Execute `/create-system` for a new 'Authentication' system."*
 
 *(Agent designs a C4 Component Diagram in `docs/systems/`, asks for permission, and HARD STOPS).*
 
-### 5️⃣ Phase 4: Execution
+### 6️⃣ Phase 5: Execution
 Prompt: 
 > *"The Authentication C4 design is approved. Implement the code."*
 
