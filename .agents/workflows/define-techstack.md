@@ -1,6 +1,7 @@
 ---
 description: Defines the global technical architecture and tech stack based on the MVP before designing individual systems.
 ---
+
 # Define Tech Stack Workflow
 
 This workflow bridges the gap between MVP Ideation and System Design. It establishes the "C4 Level 1 & 2" architecture by defining the global tools and patterns required for the MVP.
@@ -20,4 +21,4 @@ Update the `docs/02_TechStack.md` file with the finalized technologies. Add actu
 Update `docs/01_Concept.md` specifically under the `## Fundamental Design Decisions` section. Lock in the global architecture pattern (e.g., "We will use an Event-Driven Architecture with an SSOT pattern") based on the tech stack chosen.
 
 ## Step 5: Notify User
-Notify the user with the `notify_user` tool. Provide the updated `02_TechStack.md` file. Ask the user: "Are you comfortable with this Tech Stack? If so, we can now start designing the first components using `/create-system`."
+Notify the user with the `notify_user` tool. Provide the updated `02_TechStack.md` file. Ask the user: "Are you comfortable with this Tech Stack? If so, we can now start setting up the codebase with `/init-codebase`."
