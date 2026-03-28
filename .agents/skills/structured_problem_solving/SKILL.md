@@ -11,6 +11,7 @@ Wende diesen 4-Phasen-Workflow bei jeder Aufgabe an, die über triviale Code-Än
 
 ## 1. Analysis (Kontext aufbauen)
 - Lies die relevanten Dokumentationen im `docs/` Ordner (siehe `continuous_documentation` Skill).
+- **WICHTIG (Domain Knowledge):** Prüfe zwingend, ob die Datei `docs/knowledge/_Knowledge_Index.md` existiert. Falls ja, öffne und lies diesen Index, um kontextuelles Spezialwissen (KIs) für das vorliegende Problem abzurufen.
 - Analysiere den bestehenden Code und die Architektur. Verstehe die Constraints und das Problem vollständig, bevor du über Lösungen nachdenkst.
 
 ## 2. Conceptualization (Entwurf)

@@ -21,5 +21,6 @@ The Agent responds to the user by asking 3-4 highly critical, fundamental questi
 ## Step 3: Document Validation
 If the user's answers are satisfactory and the idea proves viable, the Agent creates or updates `docs/01_Concept.md` to include a new section `## Market Positioning & Target Audience`. This section strictly defines the "Who" and the "Why".
 
-## Step 4: Gatekeeping
-The Agent explicitly states whether they recommend proceeding to the MVP phrasing step (`/define-mvp`) or if the idea needs a pivot based on the market data.
+## Step 4: The Handoff
+The Agent explicitly explicitly guides the user to the next logical step in the Funnel:
+> *"Die Idee ist validiert! Hast du nun dicke Fach-PDFs, um daraus Architektur-Standards zu extrahieren (`/blueprint-domain`), oder weißt du eh schon genug und wir bauen direkt das MVP (`/define-mvp`)?"*

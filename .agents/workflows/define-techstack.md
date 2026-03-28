@@ -20,5 +20,10 @@ Update the `docs/02_TechStack.md` file with the finalized technologies. Add actu
 ## Step 4: Populate Global Architecture
 Update `docs/01_Concept.md` specifically under the `## Fundamental Design Decisions` section. Lock in the global architecture pattern (e.g., "We will use an Event-Driven Architecture with an SSOT pattern") based on the tech stack chosen.
 
-## Step 5: Notify User
-Notify the user with the `notify_user` tool. Provide the updated `02_TechStack.md` file. Ask the user: "Are you comfortable with this Tech Stack? If so, we can now start setting up the codebase with `/init-codebase`."
+## Step 5: The System Roadmap (Architektur-Schnitt)
+Direkt im Abschluss des Tech-Stacks passiert die wichtigste "Translation": Zerschneide die MVP-Features aus `01_Concept.md` in abstrakte C4-Systemblöcke (z.B. 1. Database, 2. Auth, 3. TradingEngine). 
+- Erstelle dazu die Datei `docs/systems/_System_Roadmap.md` und liste diese abstrahierten Kern-Systeme auf. Setze leere Checkboxen `[ ]` davor.
+
+## Step 6: The Handoff
+Navigiere den User zum nächsten Schritt:
+> *"Das Fundament und die System-Roadmap stehen. Gibt es noch tiefergehendes Fachwissen, das ich aus PDFs extrahieren soll (`/ingest-knowledge`), oder sollen wir die Codebase direkt generieren (`/init-codebase`)?"*

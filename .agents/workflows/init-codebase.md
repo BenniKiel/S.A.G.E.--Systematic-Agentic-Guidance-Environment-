@@ -20,6 +20,7 @@ Use your `run_command` tool to execute the appropriate CLI commands to scaffold 
 ## Step 3: Base Configuration
 Make initial configuration changes (e.g., tweaking `tsconfig.json`, `tailwind.config.ts`, `rojo.json`) to align with the core decisions made in `01_Concept.md`.
 
-## Step 4: Verification Gate
-Stop and notify the user using the `notify_user` tool:
-"I have initialized the base framework according to our Tech Stack. Please verify that the folder structure looks correct. If everything is fine, we can now start designing individual systems using `/create-system`."
+## Step 4: The Handoff
+Lies die `docs/systems/_System_Roadmap.md`. 
+Schließe den Workflow ab und frage den Nutzer:
+> *"Fundament steht! Wir sind startklar fürs Coding. Laut unserer `_System_Roadmap.md` ist System 1 das [System-Name]. Sollen wir mit dem Architektur-Design starten (`/create-system [System-Name]`)?"*

@@ -7,11 +7,13 @@ Herzlichen Glückwunsch! Du hast nun ein robustes System aufgebaut, das deine KI
 Wenn du ein komplett neues Projekt beginnst, musst du den Agenten erst das "Papier" geben, auf dem sie arbeiten können.
 
 1. **Ordnerstruktur kopieren:** Kopiere den gesamten `.agents/` Ordner (inklusive `skills/` und `workflows/`) aus diesem Projekt in das Root-Verzeichnis deines neuen Projekts.
-2. **Workspace initialisieren:** Öffne einen neuen Chat mit deinem Agenten (z.B. Antigravity) und schreibe einfach:
-   > *"Bitte führe den `/setup-workspace` Workflow aus."*
-   Der Agent legt die leere Basisstruktur (`docs/01_Concept.md`, `docs/02_TechStack.md`, etc.) an.
+2. **Den Wizard starten:** Öffne einen neuen Chat mit deinem Agenten (z.B. Antigravity) und schreibe einfach:
+   > *"Bitte führe den `/begin-project` Workflow aus."*
+   Der Agent übernimmt ab hier die Führung als Project Manager. Er initialisiert die Workspace-Ordner (`/setup-workspace`) und navigiert dich durch alle weiteren Projektphasen per "Handoff"-System.
 
-## 1. Die Ideation-Phase: Markt & MVP definieren (VOR dem Coden)
+## 1. Manuelle Workflow-Kontrolle (Optional)
+
+*Hinweis: Wenn du `/begin-project` tippst, wirst du vollautomatisch durch diese Phasen geleitet. Falls du Workflows manuell und isoliert ansteuern willst, gelten folgende Regeln:*
 
 Oft scheitern Projekte, weil zu früh Code geschrieben wird. Dein Agentic Workspace hat zwei mächtige "Product Manager" Workflows eingebaut, die du nutzen solltest, *bevor* du an Architektur denkst.
 
@@ -55,9 +57,11 @@ Sobald Codebase, Tech Stack und Konzept stehen, konzipierst du Systeme einzeln:
 
 *Was im Hintergrund passiert:* Der Agent liest die Docs, erstellt das C4-System-Dokument in `docs/systems/` inkl. Diagramm, stoppt und bittet um Erlaubnis. **Er schreibt in diesem Workflow keinen Code!**
 
-### B. Die Implementierung starten (Coding)
+### B. Die Implementierung starten (The Build Loop & QA Gate)
 Wenn du das System-Design (A) abgenickt hast, gibst du den Startschuss für echten Code:
 > *"Das Auth-Design sieht super aus. Setze es nun im Code um."*
+
+*Was im Hintergrund passiert:* Der Agent schreibt den Code. Sobald er fertig ist, fordert er dich auf, den Code lokal zu verifizieren. Klappt das, hakt er das System in der `_System_Roadmap.md` ab und baut das nächste System.
 
 ### B. Bestehenden Code anpassen / Bugs fixen
 Du musst dir keine Sorgen mehr machen, dass die Doku veraltet. Ein einfacher Prompt reicht, der Skill `continuous_documentation` greift automatisch:

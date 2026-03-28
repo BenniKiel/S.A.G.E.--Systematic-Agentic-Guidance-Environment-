@@ -22,3 +22,10 @@ This workflow initializes the core documentation architecture according to the `
 **Execution Notes for the Agent:**
 - When running this workflow, use your terminal tools (`run_command`) or file creation tools (`write_to_file`) to generate the files and directories described above.
 - **CRITICAL:** Do NOT fill `01_Concept.md` or `02_TechStack.md` with actual ideas, frameworks, or languages. You are only scaffolding the empty paper for future workflows. Use placeholders.
+
+## 8. The Handoff (The Grand Crossroad)
+Nach dem Setup bist du der Project Manager. Übergib an den nächsten Schritt des Funnels:
+> *"Der Workspace steht! Wie wollen wir starten?*
+> *(A) Idee validieren (`/validate-idea`)*
+> *(B) Nischen-Wissen extrahieren (`/blueprint-domain`)*
+> *(C) Direkt das MVP meißeln (`/define-mvp`)"*
