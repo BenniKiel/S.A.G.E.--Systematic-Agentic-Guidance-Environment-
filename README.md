@@ -32,7 +32,7 @@ S.A.G.E. is a powerful, uncompromising **"Zero-to-One"** pipeline. Instead of le
 ### 🎯 Key Features
 | Feature | How it works |
 | :--- | :--- |
-| **Product Management** | Workflows to validate raw ideas (`/validate-idea`) and ruthlessly strip away non-essential features (`/define-mvp`) *before* architecture starts. |
+| **Product Management** | Workflows to validate raw ideas (`/validate-idea`), relentlessly stip down to essentials (`/define-mvp`), and shape/brainstorm rough concepts safely (`/brainstorm`) *before* architecture starts. |
 | **Enforced C4 Design** | Agents must design a C4 Component Level document (incl. Mermaid.js diagrams) and receive *User Approval* before writing any code. |
 | **Automated ADRs** | A streamlined `/record-decision` workflow ensures "Why did we choose this Database?" decisions are logged using the MADR standard. |
 | **Token Optimization** | Agents are forced to use `grep` searches instead of full document reading to save tokens and prevent context flooding. |
@@ -55,6 +55,7 @@ SAGE-Workspace/
 │       ├── setup-workspace.md
 │       ├── validate-idea.md
 │       ├── define-mvp.md
+│       ├── brainstorm.md
 │       ├── define-techstack.md
 │       ├── create-system.md
 │       └── record-decision.md
@@ -78,6 +79,9 @@ Prompt:
 > *"I have an idea for [Your Idea]. Execute `/validate-idea`."*
 
 *(Agent searches the web, defines target audience and USP).* <br/>
+
+*(Optional: If the scope or technical approach is unclear, run `/brainstorm` to explore ideas or build a safe PoC in a sandbox).*
+
 Prompt: 
 > *"Let's scope this down. Execute `/define-mvp`."*
 

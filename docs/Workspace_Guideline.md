@@ -19,7 +19,15 @@ Oft scheitern Projekte, weil zu früh Code geschrieben wird. Dein Agentic Worksp
    > *"Ich habe eine Idee für ein neues Projekt: [z.B. Tinder für Hunde]. Bitte führe den `/validate-idea` Workflow aus."*
    Der Agent füllt das leere `01_Concept.md` mit Zielgruppen und USP-Daten.
 
-2. **Den MVP festzurren:** Wenn die Idee gut ist, schreibe:
+### Optional: Brainstorming & Proof of Concepts (PoCs)
+Manchmal hast du eine Idee, weißt aber nicht genau, wie die technische Umsetzung klappen soll, oder möchtest erst Konzepte ("shaping") sammeln, bevor du dich auf ein MVP oder eine Architektur festlegst.
+
+**Optimaler Prompt:**
+> *"Ich bin mir unsicher wegen der Umsetzung des Kern-Features. Lass uns `/brainstorm` ausführen, um Optionen zu sammeln."*
+
+Der Agent wägt Ansätze mit dir ab. Falls du explizit Code sehen willst, zwingt der Workflow den Agenten dazu, diesen in einem abgekapselten `sandbox/` Ordner abzulegen, damit dein Hauptprojekt sauber bleibt.
+
+2. **Den MVP festzurren:** Wenn die Idee gut ist (und technische Hürden eventuell im Brainstorming geklärt wurden), schreibe:
    > *"Lass uns den Scope eingrenzen. Bitte führe den `/define-mvp` Workflow aus."*
    Der Agent streicht alle "Nice-to-haves" aus `01_Concept.md` und definiert dein Minimum Viable Product.
 
